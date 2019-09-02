@@ -1,0 +1,270 @@
+body{
+    background-color: $cream;
+    color: $yellow;
+    font-size: 62.5%;
+    font-family: $body;
+    cursor: url(../../images/bud.png), auto;
+}
+
+.headerWrapper {
+    width: 1084px;
+    max-width: 80%;
+    height:100vh;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 1px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+    p{
+        font-size: 1.3rem;
+    }
+}
+
+.startButton {
+    width:100%;
+    margin:1%;
+    padding:1rem;
+
+    a{
+    background:$green;
+    color:$cream;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding:1rem 2rem;
+    font-family: $fun;
+    font-size:1.6rem;
+    letter-spacing: .3rem;
+    border-radius:2px;
+    border:1px solid transparent;
+    cursor: url(../../images/bud.png), auto;
+
+        &:hover{
+            background: $yellow;
+            color:$green;
+            transition: .3s;
+            border:1px solid $cream;
+        }
+    }
+}
+
+em{
+    font-style:italic;
+    text-shadow: -2px 1px $green;
+}
+
+h1 {
+    font-size: 7rem;
+    text-align: center;
+    margin: 5% 0%;
+    font-family: $fun;
+    color:$green;
+    letter-spacing: .5rem;
+}
+
+.headerSubtitle {
+    width: 45%;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    margin:0 auto;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+}
+
+.moodFormContainer {
+    width: 1584px;
+    max-width:98%;
+    height: 100vh;
+    margin: 0 auto 2rem;
+    text-align: center;
+    border-radius:5px;
+    background:$green;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .formTitle {
+        font-size: 3rem;
+        width:90%;
+        margin:0 auto;
+        text-transform: uppercase;
+        letter-spacing: .05rem;
+        font-family: $fun;
+        color: $cream;
+    }
+
+    p{
+        font-size: 1.6rem;
+        margin:0;
+        text-transform: uppercase;
+        letter-spacing: .3rem;
+    }
+}
+
+fieldset{
+    border:none;
+}
+
+.mood{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:2%;
+    
+}
+
+.moodChoice{
+    background: $yellow;
+    color:$cream;
+    padding:1rem 2rem;
+    border-radius:2px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size:1.6rem;
+    margin:1%;
+    border:1px solid transparent;
+    cursor: url(../../images/bud.png), auto;
+    
+    &:hover{
+        background: $cream;
+        color: $yellow;
+        transition:.3s;
+        border:1px solid $yellow;
+    }
+}
+
+.hideInput{
+    visibility: hidden;
+}
+
+input[type=radio]:checked + label{
+    background:$cream;
+    color:$yellow;
+    transition:.3s;
+    border:2px solid cream;
+}
+
+.moodButtonContain {
+    width:100%;
+
+    .moodButton{
+        font-family: $fun;
+        letter-spacing: .3rem;
+        background:$green;
+        color:$yellow;
+        font-size:1.8rem;
+        border-radius:2px;
+        margin:0 auto;
+        text-transform: uppercase;
+        padding:2% 5%;
+        display:block;
+        border:2px solid $yellow;
+        cursor: url(../../images/bud.png), auto;
+        
+        &:hover{
+            background: $cream;
+            color:$green;
+            border:2px solid $yellow;
+            transition:.3s;
+        }
+    }
+}
+
+.resultContainer{
+    background-color: $cream;
+    border-radius: 5px;
+    width:98%;
+    height:99vh;
+    margin: 0 auto 1rem;
+    text-align: center;
+    font-size:2rem;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    display:none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    .resultSpan{
+        color:$green;
+    }
+    a{
+        background:$green;
+        color:$cream;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding:.8rem;
+        font-family: $fun;
+        font-size:1.6rem;
+        letter-spacing: .3rem;
+        border-radius:2px;
+        border:1px solid transparent;
+         cursor: url(../../images/bud.png), auto;
+
+        &:hover{
+            background: $yellow;
+            color:$green;
+            transition: .3s;
+            border:1px solid $cream;
+        }
+    }
+}
+
+.userResultsContainer{
+    margin-bottom:1.5rem;
+}
+
+.userResultTitle {
+    font-family: $fun;
+    color:$green;
+    margin:0;
+    font-size: 3rem;
+    padding-bottom:1.5rem;
+    font-size: 4rem;
+    letter-spacing: .5rem;
+}
+
+img{
+    width:25%;
+    padding:1%;
+    border:1px solid $green;
+    border-radius: 3px;
+}
+
+.apiRace, .apiName {
+    text-transform: capitalize;
+    margin:.5rem 0;
+
+}
+
+.resultSpan {
+    text-transform: uppercase;
+}
+
+
+footer{
+    background: $yellow;
+    padding:1%;
+    margin:0 auto;
+    p{
+        margin: 0;
+        color:black;
+        font-size:1rem;
+        text-transform: uppercase;
+        letter-spacing: .05rem;
+        text-align: center;
+    }
+
+    a{
+    color:$green; 
+    }
+}
+
+.iconCredits {
+    color: $green;
+    margin-top:.5rem;
+    text-align: center;
+}
