@@ -34,10 +34,16 @@ weedApp.submitClick = function () {
         console.log('clicked!');
 
         const race = $("input[name=race]:checked").val();
+        
+        $("section").removeClass('spinnerContainer');
+        setTimeout(() =>{
+            $("section").addClass('spinnerContainer');
+            console.log("it works");
+        } , 5600)
 
         $('html, body').animate({
             scrollTop: $('.moodFormContainer').offset().top + $('.moodFormContainer').height()
-        }, 400);
+        }, 5800);
 
         if ($("input[name=race]:checked").length) {
             $('input[type=submit]', this).attr('disabled', 'disabled');

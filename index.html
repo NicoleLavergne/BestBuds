@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Lexend+Deca&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <title>A Joint Effort</title>
-    <link rel="icon" href="images/marijuana-leaf.png">
+    <link rel="icon" href="images/marijuana.png">
 </head>
 <body>
 
@@ -41,15 +41,29 @@
     	                <label for="hybrid" class="moodChoice">Focused & Tranquil</label>
     	            </div>
     	            
-    	            <div class="moodButtonContain">
+    	            <div class="moodButtonContain" id="submit">
     	                <input type="submit" name="submit" class="moodButton" id="moodSubmit"value="light up">
-    	            </div>
+                    </div>
+                    
     	        </fieldset>
     	    </form>
-    	</div>
+        </div>
     </div>
+
     
-     <div class="resultFlex">
+    
+    <div class="resultFlex">
+        <section class="spinnerContainer">
+            <div class="spinner">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+        </section>
         <div class="resultContainer">
             <!-- appends h2 and img -->
             <div class="userResultsContainer">
@@ -65,6 +79,7 @@
 <footer>
     <p>designed and developed by Alexa Woloszuk & Nicole Lavergne</p>
     <div class="iconCredits">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
+    <p>loader by Kevin Jannis</p>
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
